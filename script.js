@@ -4,6 +4,7 @@ const services = document.getElementById("services");
 const work = document.getElementById("work");
 const contact = document.getElementById("contact");
 const socials = document.getElementById("socials");
+const contactMe = document.getElementById("contact-me");
 
 const main = document.getElementById("main");
 const introduction = document.getElementById("introduction");
@@ -59,3 +60,13 @@ socials.addEventListener("click", function (e) {
     // block: "start",
   });
 });
+
+contactMe.addEventListener("click", function (e) {
+  e.preventDefault();
+  footer.scrollIntoView({
+    behavior: "smooth",
+    // block: "start",
+  });
+});
+
+
